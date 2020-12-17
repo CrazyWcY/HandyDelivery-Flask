@@ -231,6 +231,138 @@ data = [
         },
         d_finish_time='2020-12-15 14:30:11',
         d_money='10'
+    ),
+    Task.Task(
+        6,
+        "测试：待付款ITEM",
+        "上海交大钥匙扣",
+        [
+            "https://img.alicdn.com/imgextra/i2/67428829/TB24AZudpXXXXaFXXXXXXXXXXXX_!!67428829.jpg",
+        ],
+        {
+          'name': "交通大学闵行校区",
+          'longitude': 121.43102,
+          'latitude': 31.0176
+        },
+        {
+          'name': "虹桥机场T2",
+          'longitude': 121.333972,
+          'latitude': 31.200914
+        },
+        "25",
+        "2020-12-11 22:35:43",
+        "交大青花瓷钥匙扣。",
+        3,
+        "15619202209",
+        user['root'],
+        "2020-12-13 21:30:11",
+        puchaser=user['hjh'],
+        p_location='上海交大纪念品店',
+        p_details='限定款钥匙扣',
+        p_finish_time='2020-12-13 11:45:15',
+        p_send_location={
+          'name': "交通大学闵行校区",
+          'longitude': 121.43102,
+          'latitude': 31.0176
+        },
+        p_money='20',
+        deliver=user['lxr'],
+        d_current_location={
+          'name': "交通大学闵行校区",
+          'longitude': 121.43102,
+          'latitude': 31.0176
+        },
+        d_finish_time='2020-12-15 14:30:11',
+        d_money='10'
+    ),
+    Task.Task(
+        7,
+        "测试：待评价ITEM",
+        "上海交大钥匙扣",
+        [
+            "https://img.alicdn.com/imgextra/i2/67428829/TB24AZudpXXXXaFXXXXXXXXXXXX_!!67428829.jpg",
+        ],
+        {
+          'name': "交通大学闵行校区",
+          'longitude': 121.43102,
+          'latitude': 31.0176
+        },
+        {
+          'name': "虹桥机场T2",
+          'longitude': 121.333972,
+          'latitude': 31.200914
+        },
+        "25",
+        "2020-12-11 22:35:43",
+        "交大青花瓷钥匙扣。",
+        4,
+        "15619202209",
+        user['root'],
+        "2020-12-13 21:30:11",
+        puchaser=user['hjh'],
+        p_location='上海交大纪念品店',
+        p_details='限定款钥匙扣',
+        p_finish_time='2020-12-13 11:45:15',
+        p_send_location={
+          'name': "交通大学闵行校区",
+          'longitude': 121.43102,
+          'latitude': 31.0176
+        },
+        p_money='20',
+        deliver=user['lxr'],
+        d_current_location={
+          'name': "交通大学闵行校区",
+          'longitude': 121.43102,
+          'latitude': 31.0176
+        },
+        d_finish_time='2020-12-15 14:30:11',
+        d_money='10'
+    ),
+    Task.Task(
+        8,
+        "测试：已结束ITEM",
+        "上海交大钥匙扣",
+        [
+            "https://img.alicdn.com/imgextra/i2/67428829/TB24AZudpXXXXaFXXXXXXXXXXXX_!!67428829.jpg",
+        ],
+        {
+          'name': "交通大学闵行校区",
+          'longitude': 121.43102,
+          'latitude': 31.0176
+        },
+        {
+          'name': "虹桥机场T2",
+          'longitude': 121.333972,
+          'latitude': 31.200914
+        },
+        "25",
+        "2020-12-11 22:35:43",
+        "交大青花瓷钥匙扣。",
+        5,
+        "15619202209",
+        user['root'],
+        "2020-12-13 21:30:11",
+        puchaser=user['hjh'],
+        p_location='上海交大纪念品店',
+        p_details='限定款钥匙扣',
+        p_finish_time='2020-12-13 11:45:15',
+        p_send_location={
+          'name': "交通大学闵行校区",
+          'longitude': 121.43102,
+          'latitude': 31.0176
+        },
+        p_money='20',
+        deliver=user['lxr'],
+        d_current_location={
+          'name': "交通大学闵行校区",
+          'longitude': 121.43102,
+          'latitude': 31.0176
+        },
+        d_finish_time='2020-12-15 14:30:11',
+        d_money='10',
+        appraise = 5,
+        p_appraise = 5,
+        d_appraise = 5
     )
 ]
 
