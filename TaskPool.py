@@ -1,32 +1,50 @@
 import Task
 import json
+import datetime
 
 user = {
     "root": {
         "id": "root",
         "name": "WCY",
         "signature": "胡博头号粉丝",
-        "avatar": "https://www.gx8899.com/uploads/allimg/2016062815/yddciyonaq3.jpg"
+        "avatar": "https://www.gx8899.com/uploads/allimg/2016062815/yddciyonaq3.jpg",
+        "friends": ['hjh', 'lxr', 'lh'],
+        "address": "上海交通大学软件学院",
+        "receiveNum": 124,
+        "sendNum": 523 
     },
     "hjh": {
         "id": "hjh",
         "name": "HJH",
         "signature": "胡博本人",
-        "avatar": "https://tse2-mm.cn.bing.net/th/id/OIP.vRY1U0-rSP2pXM-5qIQIuAAAAA?pid=Api&rs=1"
+        "avatar": "https://tse2-mm.cn.bing.net/th/id/OIP.vRY1U0-rSP2pXM-5qIQIuAAAAA?pid=Api&rs=1",
+        "friends": ['root', 'lxr', 'lh'],
+        "address": "上海交通大学软件学院",
+        "receiveNum": 124,
+        "sendNum": 523 
     },
     "lxr": {
         "id": "lxr",
         "name": "LXR",
         "signature": "胡博二号粉丝",
-        "avatar": "https://www.keaidian.com/uploads/allimg/180927/co1P92F95035-0-9.jpg"
+        "avatar": "https://www.keaidian.com/uploads/allimg/180927/co1P92F95035-0-9.jpg",
+        "friends": ['root', 'hjh', 'lh'],
+        "address": "上海交通大学软件学院",
+        "receiveNum": 124,
+        "sendNum": 523 
     },
     "lh": {
         "id": "lh",
         "name": "HUGE",
         "signature": "虎子哥",
-        "avatar": "https://tse1-mm.cn.bing.net/th/id/OIP.mbbH-lakXg_XIZmfX0xG_AAAAA?pid=Api&rs=1"
+        "avatar": "https://tse1-mm.cn.bing.net/th/id/OIP.mbbH-lakXg_XIZmfX0xG_AAAAA?pid=Api&rs=1",
+        "friends": ['root', 'hjh', 'lxr'],
+        "address": "上海交通大学软件学院",
+        "receiveNum": 124,
+        "sendNum": 523 
     }
 }
+
 
 
 data = [
@@ -303,3 +321,40 @@ class TaskPool:
             if task.deliver and str(task.deliver['id']) == id:
                 res.append(self.convertToDict(task))
         return res
+    
+    def getFriendsById(self, id):
+        res = []
+        for friend in user[id]['friends']:
+            res.append(user[friend])
+        return res
+    
+    def getUserById(self, id):
+        return user[id]
+    
+    def addNewTask(self, taskJson):
+        task = json.loads(taskJson)
+        imgFiles = []
+
+        for img in task['imgFiles']:
+            imgFiles.append(img['url'])
+
+        data.append(Task.Task(
+          len(data) + 1,
+          task['title'],
+          task['itemName'],
+          imgFiles,
+          task['purchasePlace'],
+          task['address'],
+          task['money'], # need to change
+          task['deadLine'],
+          task['description'],
+          0,
+          task['phone'],
+          user['root'],
+          datetime.datetime.strftime(datetime.datetime.now(),'%Y-%m-%d %H:%M:%S') # need to change
+        ))
+
+        print(task)
+        return task
+    
+
