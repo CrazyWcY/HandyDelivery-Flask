@@ -185,7 +185,11 @@ data = [
         },
         p_money='5',
         deliver=user['lh'],
-        d_current_location='121.21792,31.28698',
+        d_current_location={
+          'name': "同济大学四平路校区邮政室",
+          'longitude': 121.508532,
+          'latitude': 31.289027
+        },
         d_finish_time='2020-12-18 12:30:15',
         d_money='15'
     ),
@@ -268,9 +272,9 @@ data = [
         p_money='20',
         deliver=user['lxr'],
         d_current_location={
-          'name': "交通大学闵行校区",
-          'longitude': 121.43102,
-          'latitude': 31.0176
+          'name': "虹桥机场T2",
+          'longitude': 121.333972,
+          'latitude': 31.200914
         },
         d_finish_time='2020-12-15 14:30:11',
         d_money='10'
@@ -311,9 +315,9 @@ data = [
         p_money='20',
         deliver=user['lxr'],
         d_current_location={
-          'name': "交通大学闵行校区",
-          'longitude': 121.43102,
-          'latitude': 31.0176
+          'name': "虹桥机场T2",
+          'longitude': 121.333972,
+          'latitude': 31.200914
         },
         d_finish_time='2020-12-15 14:30:11',
         d_money='10'
@@ -363,6 +367,32 @@ data = [
         appraise = 5,
         p_appraise = 5,
         d_appraise = 5
+    ),
+    Task.Task(
+        9,
+        "求购复旦大学纪念章",
+        "复旦大学纪念章",
+        [
+            "https://pic13.997788.com/_pic_auction/00/08/01/22/8012210c.jpg",
+            "https://tse2-mm.cn.bing.net/th/id/OIP.J2MgFnLale171Ppo-l0ZUwAAAA?pid=Api&w=460&h=460&rs=1"
+        ],
+        {
+          'name': "复旦大学",
+          'longitude': 121.50904,
+          'latitude': 31.33541
+        },
+        {
+          'name': "交通大学闵行校区",
+          'longitude': 121.43102,
+          'latitude': 31.0176
+        },
+        "1000",
+        "2020-12-25 11:32:45",
+        "求复旦纪念章。",
+        0,
+        "15619202209",
+        user['lh'],
+        "2020-12-10 08:15:44"
     )
 ]
 
