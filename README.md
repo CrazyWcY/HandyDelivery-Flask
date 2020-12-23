@@ -4,4 +4,5 @@
 python-flask
 
 ### Run
-python Server.py
+1. 修改app.py 214行post中的host属性为当前局域网IP
+2. `python app.py`
