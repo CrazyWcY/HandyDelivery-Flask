@@ -6,6 +6,13 @@ pool = TaskPool()
 
 app = Flask(__name__)
 
+@app.route('/reload', methods=['GET'])
+def reload():
+    if pool.reset():
+        return {
+            'data': '数据重置成功',
+            'code': 200
+        }
 
 @app.route('/getPurchasingTasks', methods=['GET'])
 def getPurchasingTasks():
@@ -175,6 +182,24 @@ def finishDeliveryTask():
             'code': 500
         }
 
+@app.route('/createNewSpecialTask', methods=['GET', 'POST'])
+def createNewSpecialTask():
+    print('****************************POST****************************')
+    print(request.form.get('data'))
+    pool.addSpecialTask(request.form.get('data'))
+    return {
+        'code': 200
+    }
+
+@app.route('/getChatListById', methods=['GET'])
+def getChatListById():
+    id = request.args.get('id')
+
+    return {
+        'data': pool.getChatListById(id),
+        'code': 200
+    }
+
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='10.0.0.29', debug=True)
