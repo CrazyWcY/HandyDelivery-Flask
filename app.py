@@ -200,6 +200,15 @@ def getChatListById():
         'code': 200
     }
 
+@app.route('/addChatMessage', methods=['GET', 'POST'])
+def addChatMessage():
+    idx = request.form.get('id')
+    message = request.form.get('message')
+    pool.addChatMessage(idx, message)
+    return {
+        'code': 200
+    }
+
 
 if __name__ == '__main__':
     app.run(host='10.0.0.29', debug=True)

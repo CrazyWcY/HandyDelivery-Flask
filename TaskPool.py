@@ -8,10 +8,11 @@ user = {
         "name": "WCY",
         "signature": "胡博头号粉丝",
         "avatar": "https://www.gx8899.com/uploads/allimg/2016062815/yddciyonaq3.jpg",
-        "friends": ['hjh', 'lxr', 'lh'],
+        "friends": ['hjh', 'lxr', 'lh', 'wyx', 'csd'],
         "address": "上海交通大学软件学院",
         "receiveNum": 124,
-        "sendNum": 523
+        "sendNum": 523,
+        "star": 608
     },
     "hjh": {
         "id": "hjh",
@@ -21,7 +22,8 @@ user = {
         "friends": ['root', 'lxr', 'lh'],
         "address": "上海交通大学软件学院",
         "receiveNum": 124,
-        "sendNum": 523
+        "sendNum": 523,
+        "star": 608
     },
     "lxr": {
         "id": "lxr",
@@ -31,17 +33,41 @@ user = {
         "friends": ['root', 'hjh', 'lh'],
         "address": "上海交通大学软件学院",
         "receiveNum": 124,
-        "sendNum": 523
+        "sendNum": 523,
+        "star": 608
     },
     "lh": {
         "id": "lh",
         "name": "HUGE",
-        "signature": "虎子哥",
-        "avatar": "https://tse1-mm.cn.bing.net/th/id/OIP.mbbH-lakXg_XIZmfX0xG_AAAAA?pid=Api&rs=1",
+        "signature": "情商单位",
+        "avatar": "http://ist.sjtu.edu.cn/getpic/20200907140708090_lihu.png",
         "friends": ['root', 'hjh', 'lxr'],
         "address": "上海交通大学软件学院",
         "receiveNum": 124,
-        "sendNum": 523
+        "sendNum": 523,
+        "star": 608
+    },
+    "wyx": {
+        "id": "wyx",
+        "name": "真·王博",
+        "signature": "IST之光",
+        "avatar": "http://ist.sjtu.edu.cn/getpic/20200907142605254_wangyuxiao.png",
+        "friends": ['root', 'hjh', 'lxr'],
+        "address": "上海交通大学软件学院",
+        "receiveNum": 124,
+        "sendNum": 523,
+        "star": 608
+    },
+    "csd": {
+        "id": "csd",
+        "name": "真·蔡少",
+        "signature": "屏东之光",
+        "avatar": "http://ist.sjtu.edu.cn/getpic/20200907154122023_caishengdong.png",
+        "friends": ['root', 'hjh', 'lxr'],
+        "address": "上海交通大学软件学院",
+        "receiveNum": 124,
+        "sendNum": 523,
+        "star": 608
     }
 }
 
@@ -540,6 +566,18 @@ class TaskPool:
                     "value": '王博真帅',
                     "selfSend": True,
                 }
+            ],
+            "wyx": [
+                {
+                    "type": "message",
+                    "value": '王博真帅',
+                    "selfSend": False,
+                },
+                {
+                    "type": "message",
+                    "value": '王博真帅',
+                    "selfSend": True,
+                }
             ]
         }
         return True
@@ -748,9 +786,24 @@ class TaskPool:
                 datetime.datetime.now(), '%Y-%m-%d %H:%M:%S'),  # need to change
             special_user=task['special_user']
         ))
+        self.messageLists[task['special_user']['id']].append({
+            "type": "link",
+                    "value": '',
+                    "selfSend": False,
+                    "taskId": len(self.tasks)
+        })
 
-        print(task)
+        print(self.messageLists[task['special_user']['id']])
         return task
-    
+
     def getChatListById(self, id):
         return self.messageLists[id]
+
+    def addChatMessage(self, idx, message):
+        print(idx)
+        self.messageLists[idx].append({
+            "type": "message",
+            "value": message,
+            "selfSend": False,
+        })
+        return True
