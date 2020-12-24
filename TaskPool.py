@@ -534,13 +534,21 @@ class TaskPool:
                     "type": "link",
                     "value": '',
                     "selfSend": False,
-                    "taskId": 11
+                    "taskId": 11,
+                    "imageFiles": [
+                        "https://pic13.997788.com/_pic_auction/00/08/01/22/8012210c.jpg",
+                        "https://tse2-mm.cn.bing.net/th/id/OIP.J2MgFnLale171Ppo-l0ZUwAAAA?pid=Api&w=460&h=460&rs=1"
+                    ]
                 },
                 {
                     "type": "link",
                     "value": '',
                     "selfSend": True,
-                    "taskId": 12
+                    "taskId": 12,
+                    "imageFiles": [
+                        "https://pic13.997788.com/_pic_auction/00/08/01/22/8012210c.jpg",
+                        "https://tse2-mm.cn.bing.net/th/id/OIP.J2MgFnLale171Ppo-l0ZUwAAAA?pid=Api&w=460&h=460&rs=1"
+                    ]
                 }
             ],
             "lxr": [
@@ -568,6 +576,18 @@ class TaskPool:
                 }
             ],
             "wyx": [
+                {
+                    "type": "message",
+                    "value": '王博真帅',
+                    "selfSend": False,
+                },
+                {
+                    "type": "message",
+                    "value": '王博真帅',
+                    "selfSend": True,
+                }
+            ],
+            "csd": [
                 {
                     "type": "message",
                     "value": '王博真帅',
@@ -790,7 +810,8 @@ class TaskPool:
             "type": "link",
                     "value": '',
                     "selfSend": False,
-                    "taskId": len(self.tasks)
+                    "taskId": len(self.tasks),
+                    "imageFiles": imgFiles
         })
 
         print(self.messageLists[task['special_user']['id']])
