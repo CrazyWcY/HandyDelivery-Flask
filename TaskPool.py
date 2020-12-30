@@ -6,8 +6,8 @@ user = {
     "root": {
         "id": "root",
         "name": "WCY",
-        "signature": "胡博头号粉丝",
-        "avatar": "https://www.gx8899.com/uploads/allimg/2016062815/yddciyonaq3.jpg",
+        "signature": "上海交通大学",
+        "avatar": "http://10.0.0.29:5000/static/wcy.jpg",
         "friends": ['hjh', 'lxr', 'lh', 'wyx', 'csd'],
         "address": "上海交通大学软件学院",
         "receiveNum": 124,
@@ -17,8 +17,8 @@ user = {
     "hjh": {
         "id": "hjh",
         "name": "HJH",
-        "signature": "胡博本人",
-        "avatar": "https://tse2-mm.cn.bing.net/th/id/OIP.vRY1U0-rSP2pXM-5qIQIuAAAAA?pid=Api&rs=1",
+        "signature": "复旦大学",
+        "avatar": "http://10.0.0.29:5000/static/hjh.jpg",
         "friends": ['root', 'lxr', 'lh'],
         "address": "上海交通大学软件学院",
         "receiveNum": 124,
@@ -28,8 +28,8 @@ user = {
     "lxr": {
         "id": "lxr",
         "name": "LXR",
-        "signature": "胡博二号粉丝",
-        "avatar": "https://www.keaidian.com/uploads/allimg/180927/co1P92F95035-0-9.jpg",
+        "signature": "同济大学",
+        "avatar": "http://10.0.0.29:5000/static/lxr.jpg",
         "friends": ['root', 'hjh', 'lh'],
         "address": "上海交通大学软件学院",
         "receiveNum": 124,
@@ -39,8 +39,8 @@ user = {
     "lh": {
         "id": "lh",
         "name": "HUGE",
-        "signature": "情商单位",
-        "avatar": "http://ist.sjtu.edu.cn/getpic/20200907140708090_lihu.png",
+        "signature": "上海交通大学",
+        "avatar": "http://10.0.0.29:5000/static/lihu.jpg",
         "friends": ['root', 'hjh', 'lxr'],
         "address": "上海交通大学软件学院",
         "receiveNum": 124,
@@ -49,9 +49,9 @@ user = {
     },
     "wyx": {
         "id": "wyx",
-        "name": "真·王博",
-        "signature": "IST之光",
-        "avatar": "http://ist.sjtu.edu.cn/getpic/20200907142605254_wangyuxiao.png",
+        "name": "IST之光·王博",
+        "signature": "上海交通大学",
+        "avatar": "http://10.0.0.29:5000/static/wyx.jpg",
         "friends": ['root', 'hjh', 'lxr'],
         "address": "上海交通大学软件学院",
         "receiveNum": 124,
@@ -61,8 +61,8 @@ user = {
     "csd": {
         "id": "csd",
         "name": "真·蔡少",
-        "signature": "屏东之光",
-        "avatar": "http://ist.sjtu.edu.cn/getpic/20200907154122023_caishengdong.png",
+        "signature": "上海交通大学",
+        "avatar": "http://10.0.0.29:5000/static/tsd.jpg",
         "friends": ['root', 'hjh', 'lxr'],
         "address": "上海交通大学软件学院",
         "receiveNum": 124,
@@ -108,17 +108,15 @@ class TaskPool:
             ),
             Task.Task(
                 2,
-                "2999求购原价RTX3060Ti",
-                "NVIDIA RTX 3060Ti",
+                "复旦立体贺卡",
+                "“复刻旦夕”立体纸刻贺卡",
                 [
-                    "https://3c.3dmgame.com/uploadfile/2020/1202/20201202115919476.jpg",
-                    "https://tse1-mm.cn.bing.net/th/id/OIP.PIlOjgDn1rEkZJznZ5thjQHaJd?pid=Api&rs=1",
-                    "https://tse4-mm.cn.bing.net/th/id/OIP.O4_--i7Wb6Gq9R6U3Ii5pAHaEK?pid=Api&rs=1"
+                    "http://sh.eastday.com/images/thumbnailimg/month_1506/201506301054555997.png"
                 ],
                 {
-                    'name': "交通大学闵行校区",
-                    'longitude': 121.43102,
-                    'latitude': 31.0176
+                    'name': "复旦大学",
+                    'longitude': 121.50904,
+                    'latitude': 31.33541
                 },
                 {
                     'name': "交通大学闵行校区",
@@ -137,9 +135,9 @@ class TaskPool:
                 p_details='易摔坏',
                 p_finish_time='2020-12-17 11:32:45',
                 p_send_location={
-                    'name': "x36阿姨处",
-                    'longitude': 121.43101,
-                    'latitude': 31.0176
+                    'name': "复旦大学",
+                    'longitude': 121.50904,
+                    'latitude': 31.33541
                 },
                 p_money='100'
             ),
@@ -158,9 +156,9 @@ class TaskPool:
                     'latitude': 31.0176
                 },
                 {
-                    'name': "莘庄地铁站",
-                    'longitude': 121.392186,
-                    'latitude': 31.116872
+                    'name': "上海大学(宝山校区)",
+                    'longitude': 121.39903,
+                    'latitude': 31.32144
                 },
                 "30",
                 "2020-12-20 11:32:45",
@@ -174,9 +172,9 @@ class TaskPool:
                 p_details='易碎品，已放至软件大楼圆厅。',
                 p_finish_time='2020-12-15 11:32:45',
                 p_send_location={
-                    'name': "莘庄地铁站",
-                    'longitude': 121.392186,
-                    'latitude': 31.116872
+                    'name': "上海科技大学",
+                    'longitude': 121.601394,
+                    'latitude': 31.182971
                 },
                 p_money='15'
             ),
@@ -237,9 +235,9 @@ class TaskPool:
                     'latitude': 31.0176
                 },
                 {
-                    'name': "虹桥机场T2",
-                    'longitude': 121.333972,
-                    'latitude': 31.200914
+                    'name': "上海科技大学",
+                    'longitude': 121.601394,
+                    'latitude': 31.182971
                 },
                 "25",
                 "2020-12-11 22:35:43",
@@ -253,138 +251,138 @@ class TaskPool:
                 p_details='限定款钥匙扣',
                 p_finish_time='2020-12-13 11:45:15',
                 p_send_location={
-                    'name': "交通大学闵行校区",
-                    'longitude': 121.43102,
-                    'latitude': 31.0176
+                    'name': "上海科技大学",
+                    'longitude': 121.601394,
+                    'latitude': 31.182971
                 },
                 p_money='20',
                 deliver=user['root'],
                 d_current_location={
-                    'name': "交通大学闵行校区",
-                    'longitude': 121.43102,
-                    'latitude': 31.0176
+                    'name': "上海科技大学",
+                    'longitude': 121.601394,
+                    'latitude': 31.182971
                 },
                 # d_finish_time='2020-12-15 14:30:11',
                 # d_money='10'
             ),
             Task.Task(
                 6,
-                "测试：待付款ITEM",
-                "上海交大钥匙扣",
+                "华东师大文艺青年经典毕业T",
+                "华东师大文艺青年经典毕业T",
                 [
-                    "https://img.alicdn.com/imgextra/i2/67428829/TB24AZudpXXXXaFXXXXXXXXXXXX_!!67428829.jpg",
+                    "http://sh.eastday.com/images/thumbnailimg/month_1506/201506301054561631.jpg",
                 ],
                 {
-                    'name': "交通大学闵行校区",
+                    'name': "华东师范大学闵行校区",
+                    'longitude': 121.460011,
+                    'latitude': 31.036778
+                },
+                {
+                    'name': "上海交通大学闵行校区",
                     'longitude': 121.43102,
                     'latitude': 31.0176
                 },
-                {
-                    'name': "虹桥机场T2",
-                    'longitude': 121.333972,
-                    'latitude': 31.200914
-                },
-                "25",
+                "80",
                 "2020-12-11 22:35:43",
-                "交大青花瓷钥匙扣。",
+                "华东师大文艺青年经典毕业T",
                 4,
                 "15619202209",
                 user['root'],
                 "2020-12-13 21:30:11",
                 puchaser=user['hjh'],
-                p_location='上海交大纪念品店',
-                p_details='限定款钥匙扣',
+                p_location='华东师范大学纪念品店',
+                p_details='毕业T恤',
                 p_finish_time='2020-12-13 11:45:15',
                 p_send_location={
-                    'name': "交通大学闵行校区",
+                    'name': "华东师范大学闵行校区",
+                    'longitude': 121.460011,
+                    'latitude': 31.036778
+                },
+                p_money='70',
+                deliver=user['lxr'],
+                d_current_location={
+                    'name': "上海交通大学闵行校区",
                     'longitude': 121.43102,
                     'latitude': 31.0176
                 },
-                p_money='20',
-                deliver=user['lxr'],
-                d_current_location={
-                    'name': "虹桥机场T2",
-                    'longitude': 121.333972,
-                    'latitude': 31.200914
-                },
                 d_finish_time='2020-12-15 14:30:11',
-                d_money='10'
+                d_money='6'
             ),
             Task.Task(
                 7,
-                "测试：待评价ITEM",
-                "上海交大钥匙扣",
+                "复旦火漆印章",
+                "复旦火漆印章",
                 [
-                    "https://img.alicdn.com/imgextra/i2/67428829/TB24AZudpXXXXaFXXXXXXXXXXXX_!!67428829.jpg",
+                    "http://sh.eastday.com/images/thumbnailimg/month_1506/201506301054559650.png",
                 ],
+                {
+                    'name': "复旦大学",
+                    'longitude': 121.50904,
+                    'latitude': 31.33541
+                },
                 {
                     'name': "交通大学闵行校区",
                     'longitude': 121.43102,
                     'latitude': 31.0176
                 },
-                {
-                    'name': "虹桥机场T2",
-                    'longitude': 121.333972,
-                    'latitude': 31.200914
-                },
-                "25",
+                "60",
                 "2020-12-11 22:35:43",
-                "交大青花瓷钥匙扣。",
+                "求购复旦大学FUDAN SINSE1905火漆印章一套。",
                 5,
                 "15619202209",
                 user['root'],
                 "2020-12-13 21:30:11",
                 puchaser=user['hjh'],
-                p_location='上海交大纪念品店',
-                p_details='限定款钥匙扣',
+                p_location='复旦大学',
+                p_details='复旦大学印章',
                 p_finish_time='2020-12-13 11:45:15',
                 p_send_location={
+                    'name': "复旦大学",
+                    'longitude': 121.50904,
+                    'latitude': 31.33541
+                },
+                p_money='60',
+                deliver=user['lxr'],
+                d_current_location={
                     'name': "交通大学闵行校区",
                     'longitude': 121.43102,
                     'latitude': 31.0176
-                },
-                p_money='20',
-                deliver=user['lxr'],
-                d_current_location={
-                    'name': "虹桥机场T2",
-                    'longitude': 121.333972,
-                    'latitude': 31.200914
                 },
                 d_finish_time='2020-12-15 14:30:11',
                 d_money='10'
             ),
             Task.Task(
                 8,
-                "测试：已结束ITEM",
-                "上海交大钥匙扣",
+                "同济Q萌建筑钥匙扣",
+                "同济Q萌建筑钥匙扣",
                 [
-                    "https://img.alicdn.com/imgextra/i2/67428829/TB24AZudpXXXXaFXXXXXXXXXXXX_!!67428829.jpg",
+                    "http://sh.eastday.com/images/thumbnailimg/month_1506/20150630105456278.jpg",
                 ],
+                {
+                    'name': "同济大学（嘉定校区）",
+                    'longitude': 121.220631,
+                    'latitude': 31.291873
+                },
                 {
                     'name': "交通大学闵行校区",
                     'longitude': 121.43102,
                     'latitude': 31.0176
                 },
-                {
-                    'name': "虹桥机场T2",
-                    'longitude': 121.333972,
-                    'latitude': 31.200914
-                },
                 "25",
                 "2020-12-11 22:35:43",
-                "交大青花瓷钥匙扣。",
+                "同济Q萌建筑钥匙扣",
                 6,
                 "15619202209",
                 user['root'],
                 "2020-12-13 21:30:11",
                 puchaser=user['hjh'],
-                p_location='上海交大纪念品店',
+                p_location='同济嘉定校区',
                 p_details='限定款钥匙扣',
                 p_finish_time='2020-12-13 11:45:15',
                 p_send_location={
-                    'name': "交通大学闵行校区",
-                    'longitude': 121.43102,
-                    'latitude': 31.0176
+                    'name': "同济大学（嘉定校区）",
+                    'longitude': 121.220631,
+                    'latitude': 31.291873
                 },
                 p_money='20',
                 deliver=user['lxr'],
@@ -401,16 +399,15 @@ class TaskPool:
             ),
             Task.Task(
                 9,
-                "求购复旦大学纪念章",
-                "复旦大学纪念章",
+                "求同济安全帽玩具",
+                "同济安全帽玩具",
                 [
-                    "https://pic13.997788.com/_pic_auction/00/08/01/22/8012210c.jpg",
-                    "https://tse2-mm.cn.bing.net/th/id/OIP.J2MgFnLale171Ppo-l0ZUwAAAA?pid=Api&w=460&h=460&rs=1"
+                    "http://sh.eastday.com/images/thumbnailimg/month_1506/201506301054562219.jpg"
                 ],
                 {
-                    'name': "复旦大学",
-                    'longitude': 121.50904,
-                    'latitude': 31.33541
+                    'name': "同济大学（嘉定校区）",
+                    'longitude': 121.220631,
+                    'latitude': 31.291873
                 },
                 {
                     'name': "交通大学闵行校区",
@@ -419,7 +416,7 @@ class TaskPool:
                 },
                 "1000",
                 "2020-12-25 11:32:45",
-                "求复旦纪念章。",
+                "求同济安全帽玩具。",
                 0,
                 "15619202209",
                 user['lh'],
@@ -427,17 +424,15 @@ class TaskPool:
             ),
             Task.Task(
                 10,
-                "2999求购原价RTX3060Ti",
-                "NVIDIA RTX 3060Ti",
+                "求华师大马克杯",
+                "华师大马克杯",
                 [
-                    "https://3c.3dmgame.com/uploadfile/2020/1202/20201202115919476.jpg",
-                    "https://tse1-mm.cn.bing.net/th/id/OIP.PIlOjgDn1rEkZJznZ5thjQHaJd?pid=Api&rs=1",
-                    "https://tse4-mm.cn.bing.net/th/id/OIP.O4_--i7Wb6Gq9R6U3Ii5pAHaEK?pid=Api&rs=1"
+                    "http://sh.eastday.com/images/thumbnailimg/month_1506/201506301054563272.jpg"
                 ],
                 {
-                    'name': "交通大学闵行校区",
-                    'longitude': 121.43102,
-                    'latitude': 31.0176
+                    'name': "华东师范大学闵行校区",
+                    'longitude': 121.460011,
+                    'latitude': 31.036778
                 },
                 {
                     'name': "交通大学闵行校区",
@@ -456,9 +451,9 @@ class TaskPool:
                 p_details='易摔坏',
                 p_finish_time='2020-12-17 11:32:45',
                 p_send_location={
-                    'name': "x36阿姨处",
-                    'longitude': 121.43101,
-                    'latitude': 31.0176
+                    'name': "华东师范大学闵行校区",
+                    'longitude': 121.460011,
+                    'latitude': 31.036778
                 },
                 p_money='100'
             ),
@@ -491,11 +486,10 @@ class TaskPool:
             ),
             Task.Task(
                 12,
-                "求购复旦大学纪念章（NOTE专属任务）",
-                "复旦大学纪念章",
+                "求购上海交大明信片",
+                "上海交大明信片",
                 [
-                    "https://pic13.997788.com/_pic_auction/00/08/01/22/8012210c.jpg",
-                    "https://tse2-mm.cn.bing.net/th/id/OIP.J2MgFnLale171Ppo-l0ZUwAAAA?pid=Api&w=460&h=460&rs=1"
+                    "http://sh.eastday.com/images/thumbnailimg/month_1506/201506301054553794.jpg"
                 ],
                 {
                     'name': "复旦大学",
@@ -509,7 +503,7 @@ class TaskPool:
                 },
                 "1000",
                 "2020-12-25 11:32:45",
-                "求复旦纪念章。",
+                "求上海交大明信片。",
                 0,
                 "15619202209",
                 user['hjh'],
@@ -522,12 +516,12 @@ class TaskPool:
             "hjh": [
                 {
                     "type": "message",
-                    "value": '王博真帅',
+                    "value": 'Hello',
                     "selfSend": False,
                 },
                 {
                     "type": "message",
-                    "value": '王博真帅',
+                    "value": 'Hi',
                     "selfSend": True,
                 },
                 {
@@ -546,56 +540,55 @@ class TaskPool:
                     "selfSend": True,
                     "taskId": 12,
                     "imageFiles": [
-                        "https://pic13.997788.com/_pic_auction/00/08/01/22/8012210c.jpg",
-                        "https://tse2-mm.cn.bing.net/th/id/OIP.J2MgFnLale171Ppo-l0ZUwAAAA?pid=Api&w=460&h=460&rs=1"
+                        "http://sh.eastday.com/images/thumbnailimg/month_1506/201506301054553794.jpg",
                     ]
                 }
             ],
             "lxr": [
                 {
                     "type": "message",
-                    "value": '王博真帅',
+                    "value": 'Hello',
                     "selfSend": False,
                 },
                 {
                     "type": "message",
-                    "value": '王博真帅',
+                    "value": 'Hi',
                     "selfSend": True,
                 }
             ],
             "lh": [
                 {
                     "type": "message",
-                    "value": '王博真帅',
+                    "value": 'Hi',
                     "selfSend": False,
                 },
                 {
                     "type": "message",
-                    "value": '王博真帅',
+                    "value": 'Hello',
                     "selfSend": True,
                 }
             ],
             "wyx": [
                 {
                     "type": "message",
-                    "value": '王博真帅',
+                    "value": 'Hi',
                     "selfSend": False,
                 },
                 {
                     "type": "message",
-                    "value": '王博真帅',
+                    "value": 'Hello',
                     "selfSend": True,
                 }
             ],
             "csd": [
                 {
                     "type": "message",
-                    "value": '王博真帅',
+                    "value": 'Hi',
                     "selfSend": False,
                 },
                 {
                     "type": "message",
-                    "value": '王博真帅',
+                    "value": 'Hello',
                     "selfSend": True,
                 }
             ]
@@ -644,7 +637,8 @@ class TaskPool:
     def getTasks(self):
         res = []
         for task in self.tasks:
-            res.append(self.convertToDict(task))
+            if task.special_user == None:
+                res.append(self.convertToDict(task))
         return res
 
     def getPurchasingTasks(self):
@@ -828,3 +822,16 @@ class TaskPool:
             "selfSend": False,
         })
         return True
+
+    def getSpecialTasks(self):
+        res = []
+        for task in self.tasks:
+            if(task.special_user != None):
+                res.append(self.convertToDict(task))
+        return res
+    
+    def getUsers(self):
+        res = []
+        for u in user:
+            res.append(u)
+        return res

@@ -14,6 +14,27 @@ def reload():
             'code': 200
         }
 
+@app.route('/getAllTasks', methods=['GET'])
+def getAllTasks():
+    return {
+        'data': pool.getTasks(),
+        'code': 200
+    }
+
+@app.route('/getAllUsers', methods=['GET'])
+def getAllUsers():
+    return {
+        'data': pool.getUsers(),
+        'code': 200
+    }
+
+@app.route('/getSpecialTasks', methods=['GET'])
+def getSpecialTasks():
+    return {
+        'data': pool.getSpecialTasks(),
+        'code': 200
+    }
+
 @app.route('/getPurchasingTasks', methods=['GET'])
 def getPurchasingTasks():
     return {
