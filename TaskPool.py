@@ -1,7 +1,9 @@
 import Task
 import json
 import datetime
+from rmp.initial_data import user, tasks
 
+<<<<<<< HEAD
 user = {
     "root": {
         "id": "root",
@@ -70,6 +72,8 @@ user = {
         "star": 608
     }
 }
+=======
+>>>>>>> origin/ryanliu
 
 
 class TaskPool:
@@ -79,6 +83,7 @@ class TaskPool:
         self.reset()
 
     def reset(self):
+<<<<<<< HEAD
         self.tasks = [
             Task.Task(
                 1,
@@ -511,6 +516,9 @@ class TaskPool:
                 special_user=user['root']
             ),
         ]
+=======
+        self.tasks = tasks
+>>>>>>> origin/ryanliu
 
         self.messageLists = {
             "hjh": [

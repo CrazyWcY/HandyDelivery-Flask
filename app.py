@@ -232,4 +232,9 @@ def addChatMessage():
 
 
 if __name__ == '__main__':
+<<<<<<< HEAD
     app.run(host='10.0.0.29', debug=True)
+=======
+    # app.run(host='10.162.179.113', debug=True)
+    app.run(host='127.0.0.1', debug=True)
+>>>>>>> origin/ryanliu
