@@ -1,4 +1,6 @@
-## 随手递-服务端（mock数据）
+## 随手递-服务端
+
+2020秋EI6702 大作业服务端。采用内存数据作为DEMO展示，不含RMP/数据库相关交互。
 
 ### Dependencies 
 python-flask
